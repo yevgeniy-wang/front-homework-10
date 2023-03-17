@@ -369,7 +369,7 @@ $quicksand: 'Quicksand';
   }
 }
 
-.stories{
+.stories {
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -377,42 +377,42 @@ $quicksand: 'Quicksand';
   background-size: cover;
   padding: 60px 0;
 
-  &__heading{
+  &__heading {
     color: $white;
   }
 }
 
-.videos{
+.videos {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
-  &__video{
+  &__video {
     width: 23vw;
     height: 15.3vw;
   }
 }
 
-@media(max-width: 1060px){
-  .videos{
+@media(max-width: 1060px) {
+  .videos {
     flex-direction: column;
     gap: 40px;
   }
 
-  .video{
+  .video {
     min-width: 440px;
     min-height: 295px;
 
-    &--big{
+    &--big {
       min-width: 514px;
       min-height: 342px;
     }
   }
 }
 
-.video{
+.video {
 
-  &--big{
+  &--big {
     width: 26.8vw;
     height: 17.8vw;
   }
