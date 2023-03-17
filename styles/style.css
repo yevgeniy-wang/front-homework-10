@@ -1,0 +1,361 @@
+.bg1 {
+  background: url("../gallery/bg1.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bg1__menu {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 35px 8vw;
+}
+.bg1__promo {
+  width: 70vw;
+  max-width: 1200px;
+  align-self: center;
+  gap: 32px;
+  padding: 45px 0;
+  margin: 170px 0 62px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+.bg1__airplane {
+  min-width: 60px;
+  width: 3.3vw;
+  align-self: center;
+  margin-bottom: 110px;
+}
+
+.menu {
+  display: flex;
+  font-family: "Roboto Slab";
+  justify-content: space-between;
+  align-items: center;
+}
+.menu--theme--dark .menu__name {
+  color: white;
+}
+.menu--theme--dark .nav__link, .menu--theme--dark .nav__link:visited {
+  color: white;
+}
+.menu--theme--light .nav__link, .menu--theme--light .nav__link:visited {
+  color: black;
+}
+.menu--theme--light .socials__link {
+  fill: black;
+}
+.menu--theme--light .menu__name {
+  color: black;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.nav {
+  font-family: "Lato";
+  font-weight: 500;
+  font-size: 22px;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+.nav__flag {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  gap: 1.6vw;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo__heading {
+  font-family: "Lora";
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.promo__par {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 24px;
+}
+.promo__btn {
+  font-family: "Lato";
+  padding: 20px 6vw;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.btn {
+  color: white;
+  background: #1ED400;
+  text-transform: uppercase;
+  border: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 145px 0 125px;
+}
+.about__heading {
+  align-self: center;
+}
+.about__par {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  width: 55vw;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.heading2 {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18.5vw;
+}
+.stat__num {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 7.5vw;
+  position: relative;
+  top: 4vw;
+  color: #1ED400;
+}
+.stat__image {
+  width: 45%;
+  z-index: 1;
+}
+.stat__par {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: clamp(30px, 2vw, 2vw);
+  text-align: center;
+  margin-top: 25px;
+}
+.stat__par--thin {
+  max-width: 70%;
+}
+
+@media (max-width: 1060px) {
+  .statistics {
+    flex-direction: column;
+    align-items: center;
+  }
+  .statistics .stat__num {
+    font-size: 120px;
+    top: 60px;
+  }
+  .statistics__stat {
+    min-width: 300px;
+  }
+}
+.barcelona {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: url("../gallery/bg2.png");
+  background-size: 100% 100%;
+  padding: 55px 0 105px;
+}
+.barcelona__heading2 {
+  color: white;
+}
+.barcelona__heading {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 144px;
+  text-transform: uppercase;
+  color: white;
+}
+.barcelona__date {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+.barcelona__par {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: white;
+  width: 56vw;
+}
+.barcelona__border {
+  color: white;
+  width: 16vw;
+}
+.barcelona__discount {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.barcelona__btn {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 50px;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 0 75px;
+}
+.popular__heading {
+  font-weight: 700;
+  font-size: 56px;
+}
+.popular__btn {
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 60px;
+}
+.popular__text {
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  padding: 10px 0;
+}
+.popular__image {
+  min-width: 40px;
+  width: 2vw;
+}
+
+.tours {
+  display: flex;
+  gap: 2.1vw;
+  margin: 50px 0;
+}
+.tours__tour {
+  width: 27vw;
+  height: 18vw;
+}
+
+@media (max-width: 1060px) {
+  .tours {
+    flex-direction: column;
+  }
+  .tours__tour {
+    width: 514px;
+    height: 342px;
+  }
+}
+.tour {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+.tour:first-child {
+  background: url("../gallery/tour1.png");
+  background-size: contain;
+}
+.tour:nth-child(2) {
+  background: url("../gallery/tour2.png");
+  background-size: contain;
+}
+.tour:nth-child(3) {
+  background: url("../gallery/tour3.png");
+  background-size: contain;
+}
+.tour__heading {
+  background-color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 5px 10px;
+  position: relative;
+  top: 20px;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background: url("../gallery/bg3.png") no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+.stories__heading {
+  color: white;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.videos__video {
+  width: 23vw;
+  height: 15.3vw;
+}
+
+@media (max-width: 1060px) {
+  .videos {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .video {
+    min-width: 440px;
+    min-height: 295px;
+  }
+  .video--big {
+    min-width: 514px;
+    min-height: 342px;
+  }
+}
+.video--big {
+  width: 26.8vw;
+  height: 17.8vw;
+}
+
+.bg2 {
+  background: url("../gallery/footer.png") no-repeat;
+  background-size: 100% 100%;
+}
+.bg2__menu {
+  padding: 95px 8vw 75px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,429 @@
+$black085: rgba(0, 0, 0, 0.85);
+$white: white;
+$black: black;
+$green: #1ED400;
+$gray: #333333;
+$slab: 'Roboto Slab';
+$lato: 'Lato';
+$lora: 'Lora';
+$quicksand: 'Quicksand';
+
+.bg1 {
+  background: url("../gallery/bg1.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__menu {
+    background: $black085;
+    padding: 35px 8vw;
+
+  }
+
+  &__promo {
+    width: 70vw;
+    max-width: 1200px;
+    align-self: center;
+    gap: 32px;
+    padding: 45px 0;
+    margin: 170px 0 62px;
+    background: $black085;
+    color: $white;
+  }
+
+  &__airplane {
+    min-width: 60px;
+    width: 3.3vw;
+    align-self: center;
+    margin-bottom: 110px;
+  }
+}
+
+.menu {
+  display: flex;
+  font-family: $slab;
+  justify-content: space-between;
+  align-items: center;
+
+  &--theme--dark {
+    .menu__name {
+      color: $white;
+    }
+
+    .nav__link, .nav__link:visited {
+      color: $white;
+    }
+  }
+
+  &--theme--light {
+
+    .nav__link, .nav__link:visited {
+      color: $black;
+    }
+
+    .socials__link {
+      fill: $black
+    }
+
+    .menu__name {
+      color: $black;
+    }
+  }
+}
+
+.name {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.nav {
+  font-family: $lato;
+  font-weight: 500;
+  font-size: 22px;
+
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+
+  &__flag {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.socials {
+  display: flex;
+  gap: 1.6vw;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-family: $lora;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__par {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__btn {
+    font-family: $lato;
+    padding: 20px 6vw;
+    font-weight: 900;
+    font-size: 16px;
+  }
+
+}
+
+.btn {
+  color: $white;
+  background: $green;
+  text-transform: uppercase;
+  border: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 145px 0 125px;
+
+  &__heading {
+    align-self: center;
+  }
+
+  &__par {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    width: 55vw;
+    align-self: center;
+    margin-top: 40px;
+  }
+
+}
+
+.heading2 {
+  font-family: $slab;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18.5vw;
+
+  &__num {
+    font-family: $slab;
+    font-weight: 700;
+    font-size: 7.5vw;
+    position: relative;
+    top: 4vw;
+    color: $green;
+  }
+
+  &__image {
+    width: 45%;
+    z-index: 1;
+  }
+
+  &__par {
+    font-family: $quicksand;
+    font-weight: 400;
+    font-size: clamp(30px, 2vw, 2vw);
+    text-align: center;
+    margin-top: 25px;
+
+    &--thin {
+      max-width: 70%;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .statistics {
+    flex-direction: column;
+    align-items: center;
+
+    .stat__num {
+      font-size: 120px;
+      top: 60px;
+    }
+
+    &__stat {
+      min-width: 300px;
+    }
+  }
+}
+
+.barcelona {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background: url("../gallery/bg2.png");
+  background-size: 100% 100%;
+  padding: 55px 0 105px;
+
+  &__heading2 {
+    color: $white;
+  }
+
+  &__heading {
+    font-family: $slab;
+    font-weight: 700;
+    font-size: 144px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__date {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__par {
+    font-family: $quicksand;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    width: 56vw;
+  }
+
+  &__border {
+    color: $white;
+    width: 16vw;
+  }
+
+  &__discount {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__btn {
+    font-family: $quicksand;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 50px;
+  }
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 125px 0 75px;
+
+  &__heading {
+    font-weight: 700;
+    font-size: 56px;
+  }
+
+  &__btn {
+    font-family: $quicksand;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 20px 60px;
+  }
+
+  &__text {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 14px;
+    color: $gray;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__image {
+    min-width: 40px;
+    width: 2vw
+  }
+}
+
+.tours {
+  display: flex;
+  gap: 2.1vw;
+  margin: 50px 0;
+
+  &__tour {
+    width: 27vw;
+    height: 18vw;
+  }
+}
+
+@media (max-width: 1060px) {
+  .tours {
+    flex-direction: column;
+
+    &__tour {
+      width: 514px;
+      height: 342px;
+    }
+  }
+}
+
+.tour {
+  font-family: $slab;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $white;
+
+  &:first-child {
+    background: url("../gallery/tour1.png");
+    background-size: contain;
+  }
+
+  &:nth-child(2) {
+    background: url("../gallery/tour2.png");
+    background-size: contain;
+  }
+
+  &:nth-child(3) {
+    background: url("../gallery/tour3.png");
+    background-size: contain;
+  }
+
+  &__heading {
+    background-color: $black085;
+    text-align: center;
+    padding: 5px 10px;
+    position: relative;
+    top: 20px;
+  }
+}
+
+.stories{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  background: url("../gallery/bg3.png") no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+
+  &__heading{
+    color: $white;
+  }
+}
+
+.videos{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__video{
+    width: 23vw;
+    height: 15.3vw;
+  }
+}
+
+@media(max-width: 1060px){
+  .videos{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .video{
+    min-width: 440px;
+    min-height: 295px;
+
+    &--big{
+      min-width: 514px;
+      min-height: 342px;
+    }
+  }
+}
+
+.video{
+
+  &--big{
+    width: 26.8vw;
+    height: 17.8vw;
+  }
+}
+
+
+.bg2 {
+  background: url("../gallery/footer.png") no-repeat;
+  background-size: 100% 100%;
+
+  &__menu {
+    padding: 95px 8vw 75px;
+  }
+}
