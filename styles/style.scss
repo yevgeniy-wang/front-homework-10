@@ -360,7 +360,7 @@ $quicksand: 'Quicksand';
     background-size: contain;
   }
 
-  &__heading {
+  & > span {
     background-color: $black085;
     text-align: center;
     padding: 5px 10px;
@@ -387,9 +387,16 @@ $quicksand: 'Quicksand';
   align-items: center;
   justify-content: space-evenly;
 
-  &__video {
-    width: 23vw;
-    height: 15.3vw;
+  &__item {
+    & > iframe {
+      width: 23vw;
+      height: 15.3vw;
+    }
+
+    &--big > iframe {
+      width: 26.8vw;
+      height: 17.8vw;
+    }
   }
 }
 
@@ -397,27 +404,13 @@ $quicksand: 'Quicksand';
   .videos {
     flex-direction: column;
     gap: 40px;
-  }
 
-  .video {
-    min-width: 440px;
-    min-height: 295px;
-
-    &--big {
-      min-width: 514px;
-      min-height: 342px;
+    &__item > iframe {
+      min-width: 440px;
+      min-height: 295px;
     }
   }
 }
-
-.video {
-
-  &--big {
-    width: 26.8vw;
-    height: 17.8vw;
-  }
-}
-
 
 .bg2 {
   background: url("../gallery/footer.png") no-repeat;

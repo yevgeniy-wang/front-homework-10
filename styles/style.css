@@ -301,7 +301,7 @@
   background: url("../gallery/tour3.png");
   background-size: contain;
 }
-.tour__heading {
+.tour > span {
   background-color: rgba(0, 0, 0, 0.85);
   text-align: center;
   padding: 5px 10px;
@@ -326,9 +326,13 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.videos__video {
+.videos__item > iframe {
   width: 23vw;
   height: 15.3vw;
+}
+.videos__item--big > iframe {
+  width: 26.8vw;
+  height: 17.8vw;
 }
 
 @media (max-width: 1060px) {
@@ -336,20 +340,11 @@
     flex-direction: column;
     gap: 40px;
   }
-  .video {
+  .videos__item > iframe {
     min-width: 440px;
     min-height: 295px;
   }
-  .video--big {
-    min-width: 514px;
-    min-height: 342px;
-  }
 }
-.video--big {
-  width: 26.8vw;
-  height: 17.8vw;
-}
-
 .bg2 {
   background: url("../gallery/footer.png") no-repeat;
   background-size: 100% 100%;
