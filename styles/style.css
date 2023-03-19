@@ -40,7 +40,7 @@
 .menu--theme--light .nav__link, .menu--theme--light .nav__link:visited {
   color: black;
 }
-.menu--theme--light .socials__link {
+.menu--theme--light .socials__item > a > svg {
   fill: black;
 }
 .menu--theme--light .menu__name {
